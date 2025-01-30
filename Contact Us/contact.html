@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+  <div class="header-container">
+    <img style="width: 100%" src="../Assets/chead.jpeg" alt="background img" />
+    <div class="logo-nav">
+      <img src="../Assets/logo_dark.jpg" alt="logo_dark" />
+    </div>
+    <div class="hamburger-menu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+  </div>
+    <nav class="nav_item">
+      <ul>
+        <div><a class="list" href="../index.html">Home</a></div>
+        <div><a class="list" href="../About Us/about.html">About</a></div>
+        <div><a class="list" href="../Projects/projects.html">Projects</a></div>
+        <div><a class="list" href="../Services/services.html">Services</a></div>
+        <!-- <div><a class="list" href="#insights">Insights</a></div> -->
+        <div><a class="list" href="../Resources/resources.html">Resources</a></div>
+        <div><a class="list" href="../Home/chat/chat.html"><button class="small-button">Chat with us</button></a></div>
+      </ul>
+    </nav>
+
+    <div class="header-text">
+      <h1>Contact Us</h1>
+    </div>
+  </div>
+
+  <div class="contact-container">
+    <!-- Left Side: Google Map -->
+    <div class="map-section">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.072308992498!2d88.36389541500846!3d22.572646485182027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277c3e9d5cdab%3A0xf1c9f0f4af1dff!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1609418978195!5m2!1sen!2sin"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- Right Side: Contact Form -->
+    <div class="form-section">
+      <h2>Get In Touch</h2>
+      <div class="underline"></div>
+      <br>
+      <div class="cpara">
+      <p >For any inquiries, questions or commendations, please contact us on <a href="mailto:info@pasmecbim.com">info@pasmecbim.com</a> or fill out the following form.</p></div>
+      <form style="font-size: 1.2vw;" id="contactForm" action="https://formspree.io/f/mvgoqoog" method="POST" enctype="multipart/form-data">
+          <input type="text" name="name" placeholder="Name*" required>
+          <input type="email" name="email" placeholder="Email*" required>
+          <input type="text" name="purpose" placeholder="Purpose*" required>
+          <input type="tel" name="phone" placeholder="Phone*" required>
+          
+          <textarea name="message" placeholder="Message (Optional)"></textarea>
+          <button type="submit">Send</button>
+      </form>
+      <div  id="formMessage" style="display:none; padding: 10px; background-color: #28a745; color: white; font-size: 1.2vw;">
+          Thank you for contacting us! Your message has been sent.
+      </div>
+  </div>
+  
+
+</div>
+
+<!-- Office Address Section -->
+<div class="address-section">
+    <div class="office-address">
+        <h1>OFFICE ADDRESS:</h1>
+        <br> <p >
+        7C, Dr MN Chatterjee Sarani, Narkeldanga, Raja Bazar<br>
+            Kol-700009, Usman Place, West Bengal, India<br><br>
+            Email: info@pasmecbim.com</p>
+    </div>
+    <div  class="country-contacts">
+        <div><strong>INDIA</strong><br>+91 7044355670</div>
+        <div><strong>TURKEY</strong><br>+90 5442236441</div>
+        <div><strong>SAUDI ARABIA</strong><br>+966 544314576</div>
+    </div>
+</div>
+
+  
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <a href="mailto:info@pasmecbim.com" style="color: aliceblue">info@pasmecbim.com</a>
+      </div>
+      <div class="footer-nav">
+        <ul>
+
+          <div><a class="list" href="../About Us/about.html">About</a></div>
+          <div><a class="list" href="../Projects/projects.html">Projects</a></div>
+          <div><a class="list" href="../Services/services.html">Services</a></div>
+          <div><a class="list" href="#insights">Insights</a></div>
+          <div><a class="list" href="../Resources/resources.html">Resources</a></div>
+          <div><a class="list" href="#">Contact Us</a></div>
+        </ul>
+      </div>
+      <div class="social-media">
+        <div>
+          <img src="../Assets/insta.png" alt="Instagram" />
+        </div>
+        <div>
+          <img src="../Assets/linkedin.png" alt="LinkedIN" />
+        </div>
+        <div>
+          <img src="../Assets/facebook.png" alt="facebook" />
+        </div>
+        <div>
+          <img src="../Assets/x.png" alt="X.com" />
+        </div>
+      </div>
+      <div class="footer-logo">
+        <img src="../Assets/logo_dark.jpg" alt="Company Logo" />
+      </div>
+      <p style="color: white; font-size: larger;">Copyright 2024</p>
+    </div>
+  </footer>
+  <div class="mobile-nav">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../About Us/about.html">About</a></li>
+      <li><a href="../Projects/projects.html">Projects</a></li>
+      <li><a href="../Services/services.html">Services</a></li>
+      <li><a href="#insights">Insights</a></li>
+      <li><a href="../Resources/resources.html">Resources</a></li>
+      <li><a href="#contact us">Contact Us</a></li>
+      <li><a href="../Home/chat/chat.html"><button class="small-button">Chat with us</button></a></li>
+    </ul>
+  </div>
+
+  <script src="contact.js"></script>
+</body>
+
+</html>

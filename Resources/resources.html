@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="resources.css">
+</head>
+<body>
+    <div class="header-container">
+        <img
+          style="width: 100%"
+          src="../Assets/resources.jpeg"
+          alt="background img"
+        />
+        <div class="logo-nav">
+          <img src="../Assets/logo_dark.jpg" alt="logo_dark" />
+        </div>
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </div>
+        <nav class="nav_item">
+          <ul>
+            <div><a class="list" href="../index.html">Home</a></div>
+            <div><a class="list" href="../About Us/about.html">About</a></div>
+            <div><a class="list" href="../Projects//projects.html">Projects</a></div>
+            <div><a class="list" href="../Services/services.html">Services</a></div>
+            <!-- <div><a class="list" href="#insights">Insights</a></div> -->
+            <div><a class="list" href="#">Resources</a></div>
+            <div><a class="list" href="../Contact Us/contact.html">Contact Us</a></div>
+            <div><a class="list" href="../Home/chat/chat.html"><button class="small-button">Chat with us</button></a></div>
+          </ul>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+
+        <div class="header-text">
+          <h1>RESOURCES</h1>
+        </div>
+      </div>
+    
+      <div class="container">
+        <div class="card">
+          <div class="card-title">Brochure</div>
+          <a href="../Assets/PASMEC Brochure_V3.pdf" target="_blank">
+            <img src="../Assets/brochure.jpg" alt="Brochure">
+          </a>
+        </div>
+        <div class="card">
+          <div class="card-title">Portfolio</div>
+          <a href="../Assets/PASMEC Portfolio_V3.pdf" target="_blank">
+            <img src="../Assets/portfolio.jpg" alt="Portfolio">
+          </a>
+        </div>
+        <div class="card">
+          <div class="card-title">Pamphlet</div>
+          <a href="../Assets/PASMEC Portfolio_V3.pdf" target="_blank">
+            <img src="../Assets/pamphlet.jpg" alt="Pamphlet">
+          </a>
+        </div>
+      </div>
+
+        
+<div class="video-section">
+    <h2>Videos</h2>
+    
+    <div class="video-gallery">
+        <div class="video-card">
+            <div class="video-thumbnail">
+                <img src="../Assets/video.png" alt="Video 1 Thumbnail">
+                <div class="play-button" onclick="playVideo('video1.mp4')">&#9658;</div>
+            </div>
+            <p>Virtual Design & Construction</p>
+        </div>
+        <div class="video-card">
+            <div class="video-thumbnail">
+                <img src="../Assets/video.png" alt="Video 2 Thumbnail">
+                <div class="play-button" onclick="playVideo('video2.mp4')">&#9658;</div>
+            </div>
+            <p>Model Based Estimating/ Quantity Takeoff</p>
+        </div>
+        <div class="video-card">
+            <div class="video-thumbnail">
+                <img src="../Assets/video.png" alt="Video 3 Thumbnail">
+                <div class="play-button" onclick="playVideo('video3.mp4')">&#9658;</div>
+            </div>
+            <p>4D BIM Simulation</p>
+        </div>
+        <div class="video-card">
+            <div class="video-thumbnail">
+                <img src="../Assets/video.png" alt="Video 3 Thumbnail">
+                <div class="play-button" onclick="playVideo('dm.mp4')">&#9658;</div>
+            </div>
+            <p>Virtual Design & Construction</p>
+        </div>
+        <div class="video-card">
+            <div class="video-thumbnail">
+                <img src="../Assets/video.png" alt="Video 3 Thumbnail">
+                <div class="play-button" onclick="playVideo('vd.mp4')">&#9658;</div>
+            </div>
+            <p>Model Based Estimating/ Quantity Takeoff</p>
+        </div>
+        <div class="video-card">
+            <div class="video-thumbnail">
+                <img src="../Assets/video.png" alt="Video 3 Thumbnail">
+                <div class="play-button" onclick="playVideo('vd.mp4')">&#9658;</div>
+            </div>
+            <p>4D BIM Simulation</p>
+        </div>
+    </div>
+</div>
+
+<div id="videoModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <video id="modalVideo" controls></video>
+    </div>
+</div>
+
+
+
+
+<footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <a href="mailto:info@pasmecbim.com" style="color: aliceblue"
+          >info@pasmecbim.com</a
+        >
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <div><a class="list" href="../Home/home.html">Home</a></div>
+          <div><a class="list" href="../About Us/about.html">About</a></div>
+          <div><a class="list" href="../Projects//projects.html">Projects</a></div>
+          <div><a class="list" href="../Services/services.html">Services</a></div>
+          <div><a class="list" href="#insights">Insights</a></div>
+          <div><a class="list" href="#res">Resources</a></div>
+        </ul>
+      </div>
+      <div class="social-media">
+        <div>
+          <img src="../Assets/insta.png" alt="Instagram" />
+        </div>
+        <div>
+          <img src="../Assets/linkedin.png" alt="LinkedIN" />
+        </div>
+        <div>
+          <img src="../Assets/facebook.png" alt="facebook" />
+        </div>
+        <div>
+          <img src="../Assets/x.png" alt="X.com" />
+        </div>
+      </div>
+      <div class="footer-logo">
+        <img src="../Assets/logo_dark.jpg" alt="Company Logo" />
+      </div>
+      <p style="color: white; font-size: larger;">Copyright 2024</p>
+    </div>
+
+  </footer>
+  <div class="mobile-nav">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../About Us/about.html">About</a></li>
+      <li><a href="../Projects/projects.html">Projects</a></li>
+      <li><a href="../Services/services.html">Services</a></li>
+      <li><a href="#insights">Insights</a></li>
+      <li><a href="#res">Resources</a></li>
+      <li><a href="../Contact Us/contact.html">Contact Us</a></li>
+      <li><a href="../Home/chat/chat.html"><button class="small-button">Chat with us</button></a></li>
+    </ul>
+  </div>
+        <script src="resources.js"></script>
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="services.css" />
+
+
+    <script defer>
+        function showContent(buttonIndex) {
+            // Change button active state
+            // const buttons = document.querySelectorAll('.button1');
+            const buttons = document.querySelectorAll('.button1');
+            buttons.forEach(button => button.classList.remove('active'));
+            buttons[buttonIndex - 1].classList.add('active');
+
+            // Update content based on the selected service
+            const content = document.getElementById('content');
+            if (buttonIndex === 1) {
+                content.innerHTML = `
+                    <div class="text1">Our BIM Services and 3D BIM Models enable comprehensive evaluation of design elements across architectural, structural, and interior decoration components, seamlessly integrating them with building systems and other project services. These tools empower better design decisions early in the process by offering insights through visualization, coordination, collaboration, and analysis.</div>
+                    <img src="../Assets/image1.jfif" alt="image1">
+                    <div class="text1">By leveraging our BIM Services and 3D BIM Models, you can plan and visualize the entire project during the pre-construction phase, well before breaking ground. Our advanced tools allow for space-use simulations and 3D modeling, enabling clients to experience the proposed spaces and make necessary changes before construction begins. This proactive approach ensures a clear overview from the outset, minimizing project costs and reducing time-consuming revisions.</div>
+                    <img src="../Assets/image2.jfif" alt="image2">
+                    <div class="text1">Our services not only enhance design accuracy but also foster collaboration among all stakeholders, ensuring that everyone is aligned with the project's goals. With our BIM solutions, you gain a competitive edge by optimizing project delivery and achieving superior results. Trust our expertise to transform your design vision into reality with efficiency and precision.</div>
+                `;
+            } else if (buttonIndex === 2) {
+                content.innerHTML = `
+                <div class="text1">MEP stands for Mechanical, Electrical, and Plumbing, which are critical components of
+                building design. BIM, or Building Information Modeling, represents the physical characteristics of a
+                facility, providing essential insights for design firms and the construction industry. Effective MEP
+                design requires careful coordination with other disciplines, including architectural and structural
+                elements, to ensure a seamless integration into the overall design.</div>
+                <img src="../Assets/image3.jfif" alt="image1">
+                <div class="text1">Proper planning and coordination are vital for successful project execution in the
+                construction industry. BIM facilitates this by enabling the creation and analysis of virtual
+                representations of MEP systems and other utilities. This 3D simulation enhances visualization, allowing
+                clients to better understand design intent and make informed decisions. Additionally, BIM supports the
+                development of coordinated drawings, which helps eliminate rework, streamline construction processes,
+                and reduce project time and costs.</div>
+                <img src="../Assets/image4.png" alt="image2">
+                <div class="text1">By leveraging BIM, we can effectively manage the complexities of MEP integration and
+                improve project outcomes. The ability to simulate and refine designs before construction begins ensures
+                higher accuracy, greater efficiency, and cost savings, ultimately leading to more successful and timely
+                project completion.</div>
+                `;
+            } else if (buttonIndex === 3) {
+                content.innerHTML = `
+                <div class="text1">Our Point Cloud to BIM services deliver precise as-built models ideal for refurbishment
+                and renovation projects. Point cloud modeling, leveraging 3D laser scanning technology, offers superior
+                accuracy compared to traditional survey methods that rely on manual measurements.</div>
+                <img src="../Assets/image5.jfif" alt="image1">
+                <div class="text1">Our process begins with capturing the as-built environment using advanced 3D laser
+                scanning technology. We then import and process this survey data using Autodesk Revit software. Our BIM
+                experts expertly transform the point cloud data into detailed virtual models. These models are
+                invaluable for design-build contractors and 3D laser scanning companies involved in the renovation of
+                building structures, including MEP services.</div>
+                <img src="../Assets/image6.png" alt="image2">
+                <div class="text1">Our services not only enhance accuracy but also offer cost-effective solutions, providing
+                better cost estimates and reducing errors. By utilizing point cloud data, we ensure a more accurate
+                representation of existing conditions, leading to more effective planning and execution of renovation
+                projects. Trust our expertise to deliver high-quality, precise BIM models that support successful
+                project outcomes and optimize your renovation efforts.</div>
+                `;
+            } else if (buttonIndex === 4) {
+                content.innerHTML = `
+                    <div class="text1">Our BIM Services and 3D BIM Models provide a comprehensive evaluation of design elements
+                across architectural, structural, and interior decoration components. These tools seamlessly integrate
+                these elements with building systems and other project services, enabling better design decisions early
+                in the process. With insights gained through advanced visualization, coordination, collaboration, and
+                analysis, you can optimize your designs efficiently.</div>
+            <img src="../Assets/image5.jfif" alt="image1">
+            <div class="text1">Utilizing our BIM Services and 3D BIM Models, you can effectively plan and visualize the
+                entire project during the pre-construction phase, well before any physical construction begins. Our
+                sophisticated tools allow for space-use simulations and 3D modeling, enabling clients to experience
+                proposed spaces and make necessary adjustments before construction commences. This proactive approach
+                ensures a comprehensive overview from the start, minimizing project costs and reducing time-consuming
+                revisions.</div>
+            <img src="../Assets/image6.jfif" alt="image2">
+            <div class="text1">Our services enhance design accuracy and foster collaboration among all stakeholders,
+                ensuring alignment with project goals. Our BIM solutions provide a competitive edge by optimizing
+                project delivery and achieving superior results. Trust our expertise to transform your design vision
+                into reality with efficiency and precision.</div>
+                `;
+            } else if (buttonIndex === 5) {
+                content.innerHTML = `
+                    <div class="text1">We specialize in detecting and coordinating among various trades and services, using
+                inputs such as project drawings, layout plans, and specification sheets. Our expertise lies in
+                facilitating virtual coordination before any on-site installation begins. This proactive approach allows
+                us to identify and address potential errors and difficulties early in the process.</div>
+            <img src="../Assets/Scan to bim.jpeg" alt="image1">
+            <div class="text1">By conducting thorough virtual coordination, we help clients rectify issues before they
+                become problems on-site. This not only saves valuable resources and time but also ensures the proper
+                mobilization of personnel working at the construction site. Our process enhances overall project
+                efficiency, reduces the risk of costly rework, and ensures that all trades and services are seamlessly
+                integrated.</div>
+            <img src="../Assets/Scan to bim1.jpeg" alt="image2">
+            <div class="text1">Through meticulous planning and coordination, we ensure that each component of the
+                project aligns with the overall design and operational requirements. This comprehensive approach
+                minimizes disruptions during construction, leading to smoother project execution and timely completion.
+                Trust our expertise to manage the complexities of trade coordination, ultimately delivering a more
+                efficient and successful project outcome.</div>
+                `;
+            } else if (buttonIndex === 6) {
+                content.innerHTML = `
+                   <div class="text1">An As-built drawing is a revised document produced by a contractor upon the completion of
+                a construction project. These drawings incorporate any modifications made during the construction
+                process, reflecting the exact rendering of the building and property as they appear at project
+                completion. As-built drawings serve as a critical reference for future renovations, maintenance, and
+                repairs by providing an accurate and detailed depiction of the final construction.</div>
+            <img src="../Assets/4d.jpeg" alt="image1">
+            <div class="text1">PASMEC specializes in preparing As-built 3D models and drawings, transforming scanned
+                paper drawings, survey data, or laser scan data into precise, up-to-date representations. Our expertise
+                in creating these models ensures that every change made during the construction phase is accurately
+                documented and reflected in the final drawings. This process not only aids in verifying the project's
+                adherence to design specifications but also provides invaluable insights for ongoing facility
+                management.</div>
+            <img src="../Assets/5d.jpeg" alt="image2">
+            <div class="text1"> Utilizing advanced technologies, we deliver As-built drawings that meet the highest
+                standards of quality and precision. By providing a true representation of the completed structure, our
+                As-built services ensure that all stakeholders have access to reliable documentation for decision-making
+                and planning. Trust PASMEC to deliver detailed and accurate As-built drawings and models that support
+                the long-term success and maintenance of your projects.</div>
+                <img src="../Assets/5d1.jpeg" alt="image1">
+                `;
+            } else if (buttonIndex === 7) {
+                content.innerHTML = `
+                    <div class="text1">Our Interior Design and 3D BIM Models enable contractors to thoroughly review design
+                elements, integrating them with building systems and other project services. These models facilitate
+                better design decisions early in the process by providing insights through advanced visualization,
+                coordination, collaboration, and analysis tools.</div>
+            <img src="../Assets/Gis.jpeg" alt="image1">
+            <div class="text1">By leveraging our Interior Design and 3D BIM Models, you can plan and visualize the
+                entire project during the pre-construction phase, well before construction begins. These tools allow for
+                space-use simulations and 3D modeling, giving clients a realistic view of what the space will look like
+                and the opportunity to make changes before construction starts. This proactive approach ensures a
+                comprehensive overview from the outset, minimizing project costs and reducing time-consuming revisions.
+            </div>
+            <img src="../Assets/Gis.jpeg" alt="image2">
+            <div class="text1">Our services not only enhance design accuracy but also foster collaboration among all
+                stakeholders, ensuring everyone is aligned with the project’s goals. With our solutions, you gain a
+                competitive edge by optimizing project delivery and achieving superior results. Trust our expertise to
+                transform your design vision into reality with efficiency and precision.</div>
+                `;
+            } else if (buttonIndex === 8) {
+                content.innerHTML = `
+                    <div class="text1">We specialize in detecting and coordinating among various trades and services, utilizing
+                project drawings, layout plans, and specification sheets. Our focus is on virtual coordination prior to
+                on-site installation, which allows us to identify and address potential issues early in the process.
+            </div>
+            <img src="../Assets/image71.png" alt="image1">
+            <div class="text1">This virtual approach enables us to rectify errors and resolve difficulties before they
+                impact the construction site. By addressing these issues in advance, we help clients save valuable
+                resources and time, ensuring a more efficient project execution. Additionally, our method improves the
+                mobilization of personnel on site, as all trades and services are aligned and ready for installation.
+            </div>
+            <img src="../Assets/image72.jfif" alt="image2">
+            <div class="text1">Our comprehensive coordination process enhances overall project efficiency by integrating
+                all trades and services seamlessly, reducing the risk of costly rework, and ensuring timely project
+                completion. This proactive strategy not only minimizes disruptions but also contributes to smoother and
+                more effective project management. Trust our expertise to streamline your project, optimize resource
+                use, and achieve successful outcomes with precise and effective coordination.</div>
+                `;
+            } else if (buttonIndex === 9) {
+                content.innerHTML = `
+                    <div class="text1"> PASMEC offers exceptional 3D BIM Rendering services to architecture firms, interior
+                designers, builders, and real estate professionals. We specialize in creating highly detailed and
+                realistic 3D architectural renderings for projects worldwide, collaborating closely with architects,
+                designers, developers, and builders across various industries.
+            </div>
+            <div class="text1">Our 3D rendering services encompass the exact design, material, and lighting
+                specifications of your project. We include elements such as people, vegetation, fixtures, fittings, and
+                furniture to deliver an accurate representation of your vision. Our team is proficient in using advanced
+                software like 3D MAX, VRay, Revit, and other rendering tools to achieve the highest quality results.
+            </div>
+
+            <div class="text1" style="width: 100%;">
+                <div style="margin-bottom: 13px;" >Our offerings include:</div>
+                <div class="inner-text">
+                <div style="margin-bottom: 10px;" > 1. 3D Exterior and Interior Rendering: Detailed and lifelike renderings of building exteriors and
+                interiors. </div>
+                <div style="margin-bottom: 10px;" > 2. Photorealistic 3D Architectural Rendering: High-quality images that accurately reflect your design. </div>
+                <div style="margin-bottom: 10px;" > 3. 3D Architectural Animation: Dynamic animations showcasing your project in motion. </div>
+                <div style="margin-bottom: 10px;" > 4. Architectural Flyby and Walkthrough: Virtual tours providing immersive experiences of your design. </div>
+                <div style="margin-bottom: 10px;" > 5. Landscape Designing: Detailed visualizations of outdoor spaces. </div> 
+                </div>
+                Partner with PASMEC to bring your architectural and design projects to life with unparalleled realism
+                and precision.</div>
+
+            <img src="../Assets/image80.jfif" alt="image2">
+                `;
+            }
+        }
+       
+    </script>
+
+
+</head>
+
+<body>
+    <div class="header-container">
+        <img style="width: 100%" src="../Assets/shead.png" alt="background img" />
+        <div class="logo-nav">
+            <img src="../Assets/logo_dark.jpg" alt="logo_dark" />
+        </div>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="nav_item">
+            <ul>
+
+                <div><a class="list" href="../index.html">Home</a></div>
+                <div><a class="list" href="../About Us/about.html">About</a></div>
+                <div><a class="list" href="../Projects/projects.html">Projects</a></div>
+                <div><a class="list" href="#">Services</a></div>
+                <!-- <div><a class="list" href="#insights">Insights</a></div> -->
+                <div><a class="list" href="../Resources/resources.html">Resources</a></div>
+                <div><a class="list" href="../Contact Us/contact.html">Contact Us</a></div>
+                <div><a class="list" href="../Home/chat/chat.html"><button class="small-button">Chat with
+                            us</button></a>
+                </div>
+            </ul>
+        </nav>
+
+        <div class="header-text">
+            <h1>Services</h1>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="button_container">
+            <button class="button1 active" onclick="showContent(1)">Architecture BIM Services</button>
+            <button class="button1" onclick="showContent(2)">Structure BIM Services</button>
+            <button class="button1" onclick="showContent(3)">MEP BIM Services</button>
+            <button class="button1" onclick="showContent(4)">Clash Detection & Coordination</button>
+            <button class="button1" onclick="showContent(5)">Scan to BIM</button>
+            <button class="button1" onclick="showContent(6)">4D, 5D BIM Services</button>
+            <button class="button1" onclick="showContent(7)">GIS Attribution</button>
+            <button class="button1" onclick="showContent(8)">Cobie and BIM</button>
+            <button class="button1" onclick="showContent(9)">Gama AR</button>
+        </div>
+
+        <div class="details_container" id="content">
+            <!-- Default Content for Architecture BIM Services -->
+            <div class="text1">Our BIM Services and 3D BIM Models enable comprehensive evaluation of design elements
+                across architectural, structural, and interior decoration components, seamlessly integrating them with
+                building systems and other project services. These tools empower better design decisions early in the
+                process by offering insights through visualization, coordination, collaboration, and analysis.</div>
+            <img src="../Assets/image1.jfif" alt="image1">
+            <div class="text1">By leveraging our BIM Services and 3D BIM Models, you can plan and visualize the entire
+                project during the pre-construction phase, well before breaking ground. Our advanced tools allow for
+                space-use simulations and 3D modeling, enabling clients to experience the proposed spaces and make
+                necessary changes before construction begins. This proactive approach ensures a clear overview from the
+                outset, minimizing project costs and reducing time-consuming revisions.</div>
+            <img src="../Assets/image2.jfif" alt="image2">
+            <div class="text1">Our services not only enhance design accuracy but also foster collaboration among all
+                stakeholders, ensuring that everyone is aligned with the project's goals. With our BIM solutions, you
+                gain a competitive edge by optimizing project delivery and achieving superior results. Trust our
+                expertise to transform your design vision into reality with efficiency and precision.</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <a href="mailto:info@pasmecbim.com" style="color: aliceblue">info@pasmecbim.com</a>
+            </div>
+            <div class="footer-nav">
+                <ul>
+
+
+                    <div><a href="../About Us/about.html">About</a></div>
+                    <div><a href="../Services/services.html">Services</a></div>
+                    <div><a href="../Projects/projects.html">Projects</a></div>
+                    <div><a href="#">Insights</a></div>
+                    <div><a href="../Resources/resources.html">Resources</a></div>
+                    <div><a href="../Contact Us/contact.html">Contact Us</a></div>
+                </ul>
+            </div>
+            <div class="social-media">
+                <div>
+                    <img src="../Assets/insta.png" alt="Instagram" />
+                </div>
+                <div>
+                    <img src="../Assets/linkedin.png" alt="LinkedIN" />
+                </div>
+                <div>
+                    <img src="../Assets/facebook.png" alt="facebook" />
+                </div>
+                <div>
+                    <img src="../Assets/x.png" alt="X.com" />
+                </div>
+            </div>
+            <div class="footer-logo">
+                <img src="../Assets/logo_dark.jpg" alt="Company Logo" />
+            </div>
+            <p>Copyright 2024</p>
+        </div>
+    </footer>
+    <div class="mobile-nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../About Us/about.html">About</a></li>
+          <li><a href="../Projects/projects.html">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#insights">Insights</a></li>
+          <li><a href="../Resources/resources.html">Resources</a></li>
+          <li><a href="../Contact Us/contact.html">Contact Us</a></li>
+          <li><a href="..\Home\chat\chat.html"><button class="small-button">Chat with us</button></a></li>
+        </ul>
+      </div>
+     <script src="service.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="chat.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="contact-info">
+      <h2>Chat With Us</h2>
+      <p>
+
+      </p>
+      <address>
+        7C, Dr MN Chatterjee Sarani, Narkeldanga, Raja Bazar
+        Kol-700009, Usman Place, West Bengal, India
+
+        <br>
+        Ankara,Turkey, 06794
+      </address>
+      <p>
+        📞 INDIA:+91 7044355670<br>
+        📞 INDIA:+91 9118247461<br>
+        📞 TURKEY:+90 5442236441<br>
+        📞 SAUDI ARABIA:+966 544314576<br>
+        📞 SAUDI ARABIA:+966 566716810<br>
+        📧 info@pasmecbim.com
+      </p>
+    </div>
+    <div class="form-section">
+      <form id="contactForm" action="https://formspree.io/f/xeoqlkag" method="POST">
+        <input type="text" name="name" placeholder="Enter Full Name" required>
+        <input type="tel" name="mobile" placeholder="Enter Mobile Number" required>
+        <input type="email" name="_replyto" placeholder="Enter Email Address" required>
+        <input type="text" name="subject" placeholder="Enter Subject" required>
+        <textarea name="message" placeholder="Enter Your Message" rows="5" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="formResponse" class="message success" style="display: none;">
+        Form submitted successfully!
+      </div>
+      <div id="formError" class="message error" style="display: none;">
+        Form submission failed. Please try again.
+      </div>
+    </div>
+  </div>
+  <script src="chat.js"></script>
+</body>
+
+</html>
