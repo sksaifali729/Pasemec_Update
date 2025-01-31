@@ -520,11 +520,10 @@ footer {
     color: #01a627;
   }
 
-  .footer-info {
-    /* margin-bottom: 10px;
-    align-items: center; */
-    font-size: 5.5vw;
-
+  .footer-info, .footer-container p {
+    
+    font-size: 4vw;
+    color: #ffffff;
   }
 
   .footer-nav {
