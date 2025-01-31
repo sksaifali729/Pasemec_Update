@@ -17,6 +17,7 @@ function closeModal() {
     modalVideo.pause();
     modalVideo.src = ""; // Clear the source to stop buffering
 }
+
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const navItem = document.querySelector('.nav_item');
 const mobileNav = document.querySelector('.mobile-nav');
