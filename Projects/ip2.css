@@ -464,3 +464,9 @@ footer {
     animation-delay: 0.8s;
   }
 }
+
+@media (max-width: 320px) {
+  .logo-nav img {
+    left: 18px;
+}
+}

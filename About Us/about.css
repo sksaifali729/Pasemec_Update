@@ -806,3 +806,19 @@ footer {
     animation-delay: 0.8s;
   }
 }
+
+@media (max-width: 320px) {
+  .header-text {
+      bottom: 567px;
+      font-size: 15px;
+  }
+
+  .about-image1 img {
+    margin-left: -69px;
+    margin-top: -112%;
+}
+.about-image2 img {
+  margin-top: -11%;
+  margin-left: 17%;
+}
+}

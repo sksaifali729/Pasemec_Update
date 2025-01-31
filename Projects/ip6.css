@@ -229,3 +229,9 @@ footer {
   height: 79px;
 
 }
+
+@media (max-width: 320px) {
+  .logo-nav img {
+    left: 18px;
+}
+}

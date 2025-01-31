@@ -1464,3 +1464,22 @@ footer {
     animation-delay: 0.8s;
   }
 }
+
+
+
+@media (max-width: 320px) {
+  .header-text {
+    width: 80vw;
+    top: 12%;
+    font-size: 9px;
+}
+
+  .about-image1 img {
+    margin-left: -68px;
+    margin-top: -69%;
+}
+.about-image2 img {
+  margin-top: -11%;
+  margin-left: 17%;
+}
+}

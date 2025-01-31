@@ -567,3 +567,9 @@ footer {
     animation-delay: 0.8s;
   }
 }
+
+@media (max-width:320px) {
+  .header-text {
+    font-size: 15px;
+}
+}

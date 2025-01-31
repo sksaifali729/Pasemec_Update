@@ -488,3 +488,10 @@ footer {
 
 
 }
+
+
+@media (max-width: 320px) {
+  .button-group {
+      margin-left: 6%;
+  }
+}
