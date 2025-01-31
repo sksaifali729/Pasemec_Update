@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Insider_Projects</title>
+  <title>Inside_Project</title>
   <link rel="stylesheet" href="insideproject.css">
 </head>
 
@@ -14,23 +14,23 @@
     <div class="logo-nav">
       <img src="../Assets/logo_dark.jpg" alt="logo_dark" />
     </div>
+
     <div class="hamburger-menu">
       <div class="bar"></div>
       <div class="bar"></div>
       <div class="bar"></div>
-  </div>
+    </div>
     <nav class="nav_item">
       <ul>
         <ul>
-          <div><a class="list" href="../index.html">Home</a></div>
+          <div><a class="list" href="../Home/home.html">Home</a></div>
           <div><a class="list" href="../About Us/about.html">About</a></div>
           <div><a class="list" href="#">Projects</a></div>
           <div><a class="list" href="../Services/services.html">Services</a></div>
-          <!-- <div><a class="list" href="#insights">Insights</a></div> -->
+          <div><a class="list" href="#insights">Insights</a></div>
           <div><a class="list" href="../Resources/resources.html">Resources</a></div>
-          <div><a class="list" href="../Contact Us/contact.html">Contact </a></div>
-          <div><a class="list" href="../Home/chat/chat.html"><button class="small-button">Chat </button></a>
-          </div>
+          <div><a class="list" href="../Contact Us/contact.html">Contact Us</a></div>
+          <div><a class="list" href="/Home/chat/chat.html"><button class="small-button">Chat with us</button></a></div>
         </ul>
 
     </nav>
@@ -74,7 +74,6 @@
       </div>
       <div class="footer-nav">
         <ul>
-
           <div><a href="../About Us/about.html">About</a></div>
           <div><a href="../Services/services.html">Services</a></div>
           <div><a href="../Projects/projects.html">Projects</a></div>
@@ -97,6 +96,7 @@
           <img src="../Assets/x.png" alt="X.com" />
         </div>
       </div>
+
       <div class="footer-logo">
         <img src="../Assets/logo_dark.jpg" alt="Company Logo" />
       </div>
@@ -120,8 +120,8 @@
     const navItem = document.querySelector('.nav_item');
     const mobileNav = document.querySelector('.mobile-nav');
     hamburgerMenu.addEventListener('click', () => {
-        navItem.classList.toggle('active');
-        mobileNav.classList.toggle('active');
+      navItem.classList.toggle('active');
+      mobileNav.classList.toggle('active');
     });
   </script>
 </body>

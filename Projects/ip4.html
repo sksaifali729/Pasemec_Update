@@ -15,6 +15,12 @@
       <img src="../Assets/logo_dark.jpg" alt="logo_dark" />
     </div>
 
+    <div class="hamburger-menu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
     <nav class="nav_item">
       <ul>
         <ul>
@@ -97,6 +103,28 @@
       <p style="color: white; font-size: larger;">Copyright 2024</p>
     </div>
   </footer>
+
+  <div class="mobile-nav">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="../About Us/about.html">About</a></li>
+      <li><a href="../Projects/projects.html">Projects</a></li>
+      <li><a href="../Services/services.html">Services</a></li>
+      <li><a href="#insights">Insights</a></li>
+      <li><a href="../Resources/resources.html">Resources</a></li>
+      <li><a href="../Contact Us/contact.html">Contact Us</a></li>
+      <li><a href="chat/chat.html"><button class="small-button">Chat with us</button></a></li>
+    </ul>
+  </div>
+  <script>
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navItem = document.querySelector('.nav_item');
+    const mobileNav = document.querySelector('.mobile-nav');
+    hamburgerMenu.addEventListener('click', () => {
+      navItem.classList.toggle('active');
+      mobileNav.classList.toggle('active');
+    });
+  </script>
 
 </body>
 
